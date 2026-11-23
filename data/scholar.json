@@ -1,0 +1,106 @@
+{
+  "source": "CV snapshot",
+  "updated_at": null,
+  "metrics": null,
+  "articles": [
+    {
+      "title": "Advancing morphological profiling with self-supervised learning through comparative insights into representation learning of cellular perturbations",
+      "year": 2026,
+      "venue": "Nature Methods",
+      "authors": "W. M. Abdelmoula, T. Albuquerque, S. Jaensch, et al.",
+      "url": "https://doi.org/10.1038/s41592-026-03270-z",
+      "citations": null,
+      "selected": true
+    },
+    {
+      "title": "BiGMINT: Biologically-guided Hierarchical Multimodal Integration for Modeling Multiple Compound Activities in Drug Discovery",
+      "year": 2026,
+      "venue": "CVPR",
+      "authors": "P. Pati, B. Li, A. R. Khan, T. Albuquerque, et al.",
+      "url": "",
+      "citations": null,
+      "selected": true
+    },
+    {
+      "title": "MoMIL: Mixture of Multi-instance Learners for Modeling Multiple Compound Activities in High Content Imaging",
+      "year": 2025,
+      "venue": "MICCAI",
+      "authors": "P. Pati, H. Cheng, S. Jaensch, et al. (including T. Albuquerque)",
+      "url": "https://doi.org/10.1007/978-3-032-05169-1_36",
+      "citations": null,
+      "selected": false
+    },
+    {
+      "title": "Unimodal Distributions for Ordinal Regression",
+      "year": 2025,
+      "venue": "IEEE Transactions on Artificial Intelligence",
+      "authors": "J. S. Cardoso, R. Cruz, T. Albuquerque",
+      "url": "https://doi.org/10.1109/TAI.2025.3549740",
+      "citations": null,
+      "selected": true
+    },
+    {
+      "title": "Characterizing the Interpretability of Attention Maps in Digital Pathology",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "authors": "T. Albuquerque, A. Yüce, M. D. Herrmann, A. Gomariz",
+      "url": "https://arxiv.org/abs/2407.02484",
+      "citations": null,
+      "selected": true
+    },
+    {
+      "title": "Multimodal Context-Aware Detection of Glioma Biomarkers Using MRI and WSI",
+      "year": 2023,
+      "venue": "MICCAI Workshops",
+      "authors": "T. Albuquerque, M. Fang, B. Wiestler, et al.",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-47425-5_15",
+      "citations": null,
+      "selected": true
+    },
+    {
+      "title": "Rethinking low-cost microscopy workflow: Image enhancement using deep based Extended Depth of Field methods",
+      "year": 2023,
+      "venue": "Intelligent Systems with Applications",
+      "authors": "T. Albuquerque, L. Rosado, R. Cruz, et al.",
+      "url": "https://doi.org/10.1016/j.iswa.2022.200170",
+      "citations": null,
+      "selected": false
+    },
+    {
+      "title": "Quality Control in Digital Pathology: Automatic Fragment Detection and Counting",
+      "year": 2022,
+      "venue": "EMBC",
+      "authors": "T. Albuquerque, A. Moreira, B. Barros, et al.",
+      "url": "https://doi.org/10.1109/EMBC48229.2022.9871208",
+      "citations": null,
+      "selected": false
+    },
+    {
+      "title": "Ordinal losses for classification of cervical cancer risk",
+      "year": 2021,
+      "venue": "PeerJ Computer Science",
+      "authors": "T. Albuquerque, R. Cruz, J. S. Cardoso",
+      "url": "https://doi.org/10.7717/peerj-cs.457",
+      "citations": null,
+      "selected": true
+    },
+    {
+      "title": "Deep Ordinal Focus Assessment for Whole Slide Images",
+      "year": 2021,
+      "venue": "ICCV Workshops",
+      "authors": "T. Albuquerque, A. Moreira, J. S. Cardoso",
+      "url": "https://doi.org/10.1109/ICCVW54120.2021.00079",
+      "citations": null,
+      "selected": false
+    },
+    {
+      "title": "Embedded Regularization For Classification Of Colposcopic Images",
+      "year": 2021,
+      "venue": "ISBI",
+      "authors": "T. Albuquerque, J. S. Cardoso",
+      "url": "https://doi.org/10.1109/ISBI48211.2021.9433871",
+      "citations": null,
+      "selected": false
+    }
+  ]
+}
