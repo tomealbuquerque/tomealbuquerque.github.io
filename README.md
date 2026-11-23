@@ -1,47 +1,46 @@
-# Tomé Albuquerque | Personal research portfolio
+# Tomé Albuquerque | Research portfolio v2
 
-A lightweight, responsive GitHub Pages site built from the November 2026 CV and public GitHub profile. No framework, build tools, API keys, analytics or tracking dependencies.
+## What changed
+Editorial ivory/forest-green design, supplied portrait, responsive layouts, accessible controls, searchable publications, most-cited sorting, light/dark mode, structured metadata and automatic Scholar synchronization. No analytics, external fonts or frameworks.
 
-## Publish
-1. Create a GitHub repository named `tomealbuquerque.github.io` under your personal account. If it already exists, back it up and merge these files rather than overwriting blindly.
-2. Upload the CONTENTS of this ZIP to the repository root, not the enclosing folder. Include `index.html`, `styles.css`, `script.js`, `publications.json` and `.nojekyll`.
-3. Open repository Settings > Pages. Under Build and deployment, choose Deploy from a branch, select `main` and `/ (root)`, then Save.
-4. Open the site URL shown by GitHub Pages after deployment completes.
+## IMPORTANT: this package uses GitHub Actions, NOT branch publishing
+The website is in public/. The workflow is in .github/workflows/. Upload the ENTIRE package contents to the repository root, preserving those directories. Do not upload only public/, or automatic synchronization will not run. Do not upload the ZIP itself.
 
-Official instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+## One-time activation
+1. Replace the old site with the package contents, including hidden .github directory. Keep .git intact. Commit and push to main.
+2. Repository Settings > Pages > Build and deployment > Source: GitHub Actions. This supersedes the earlier 'Deploy from a branch' instructions.
+3. Create a SerpApi account and obtain an API key: https://serpapi.com/google-scholar-author-api . SerpApi is a third-party provider, not an official Google Scholar API. Review its terms, privacy and current pricing. No subscription has been purchased or account created for you.
+4. Repository Settings > Secrets and variables > Actions > New repository secret. Name: SERPAPI_KEY. Value: your key. NEVER put the key in JavaScript, public/ or a commit. Do not send it in chat.
+5. Actions > Refresh Scholar and deploy website > Run workflow. The first successful run activates synchronized Scholar data. Check the run log and the visible 'Synced from Scholar' date.
+6. The workflow requests a daily refresh at 06:23 UTC. It also runs on pushes to main and manually. Schedules can be delayed or disabled by GitHub, so the page shows a dated snapshot, not a real-time feed.
+7. Your screenshot showed a PRIVATE repository. If your plan does not support Pages from private repositories, make this personal-site repository public only after reviewing its full history for private material. Deleting files in a new commit does not erase them from history.
 
-## Preview
-Open index.html in a browser. All core content, filtering and theme controls work locally without a server. The HTML preview download is self-contained.
+## What is actually live
+- Google Scholar: build-time refresh of the publication list, per-paper citation counts, total citations, h-index and i10-index through SerpApi. Profile ID RfeLaPEAAAAJ. Paginated, with validation and no invented metrics. Selected work is matched against curated titles; All publications shows the full synchronized record. Scholar may include preprints and duplicates; no acceptance status is inferred.
+- GitHub: browser-side public API requests update language and star counts for four curated public repositories. Rate limits or offline conditions leave the curated fallback visible.
+- LinkedIn: profile link only. No scraping or automatic LinkedIn synchronization.
+- ORCID/Hugging Face: not added because no verified profile URL was provided.
 
-## Included integrations
-- Google Scholar: direct profile links and a full-publication-record call to action using the ID from the CV.
-- GitHub: profile and six verified public repository links.
-- LinkedIn: direct profile and contact links.
-- Publisher DOI / arXiv links for publications where supplied in the CV.
-- University-hosted doctoral thesis.
-- Schema.org Person metadata for search engines.
+## Failure handling
+Before fetching Scholar, the script attempts to recover the last successfully deployed Scholar JSON from the Pages URL. If the API key is absent, a request fails, metrics are incomplete or pagination is inconsistent, the previous successful data and original timestamp are retained when recoverable. Otherwise the CV snapshot is shown. No fabricated metrics. The UI marks data older than three days as overdue. The API key stays in the Actions environment and is never written into public artifacts or logs. GitHub/SerpApi uptime and quotas are external dependencies.
 
-These are profile/content links, NOT automatic synchronization. No citation metrics have been invented. Scholar profile content could not be retrieved during creation. Publications are a curated CV snapshot. There is no Scholar scraping, third-party proxy or API dependency.
+## Local preview
+Open preview.html (separate download) for a self-contained preview with the portrait and CV publication snapshot. To test the packaged website with local fetch, run `python -m http.server 8000 --directory public` from the repository root and open the localhost address printed by Python. Scholar refresh requires a configured key and network access; it was NOT run against a live account during creation.
 
-## Edit content
-- Bio, experience, education, software and publication markup: index.html.
-- Colors and responsive layout: styles.css.
-- Search/filter and theme toggle: script.js.
-- Publication metadata: publications.json. IMPORTANT: this JSON is a downloadable metadata snapshot, not the rendering source. Update BOTH JSON and publication HTML when adding papers.
-- Optional portrait: replace the TA monogram with your own approved local image and descriptive alt text.
-- Optional CV download: add a public-safe CV PDF and a link in the hero. The original CV is deliberately NOT bundled because it includes a phone number, permit details and employer-specific information.
-- ORCID, Hugging Face, Semantic Scholar and other profiles: add only your verified profile URLs; none were invented.
+## Edit
+- public/index.html: bio, research, career, education and selected-paper snapshot in initial-data.
+- public/styles.css: layout and themes.
+- public/script.js: UI and GitHub integration.
+- public/data/scholar.json: initial fallback; automatically replaced in the deployment artifact, not committed back to Git.
+- public/assets/portrait.webp: supplied portrait, converted to WebP without generative alteration.
+- scripts/sync_scholar.py: provider and pagination logic.
+- .github/workflows/site.yml: schedule and Pages deployment.
 
-## Content checks before publication
-- Confirm employer-approved wording and publication status, especially 2026 entries. Entries follow the CV and were not independently verified against every publisher.
-- The CV lists BiGMINT at CVPR 2026 but provides no paper URL. Its entry deliberately has no fabricated paper link.
-- DeepCellMorpho and Quasi-Unimodal Loss are linked as standalone public software, not asserted to be the official repositories of a specific paper.
-- No unpublished MorphoBench / CP-JEPA work, internal platform names, private phone number, permit details or internal links are included.
-- Present employment reflects the November 2026 CV; update it after any role change.
-- Check links and review the mobile layout before launch.
+## Review before publishing
+The content is condensed from the CV used in the previous version. Employer dates reflect November 2026 and need updating after a role change. Verify all publication statuses and DOI links before launch. The original CV, private phone number, permit details, internal documents and unpublished project names are not bundled. No claim is made that the repository has been modified or the site deployed. Photo is used as supplied; no identity recognition was performed.
 
-## Accessibility and privacy
-Semantic headings, skip link, keyboard focus, labelled search/filter controls, live search result count, reduced-motion support, responsive layout and print styles. Theme preference is saved only in the visitor's local browser; no tracking or network API calls are made by the scripts. External sites are contacted only when links are followed.
-
-## Provenance
-Source: professional_cv_tome_albuquerque_full (10).pdf, modified 17 November 2026, and https://github.com/tomealbuquerque. Website wording is condensed for a public research portfolio, not a verbatim CV reproduction. No public deployment was performed from this environment.
+## References
+https://serpapi.com/google-scholar-author-api
+https://serpapi.com/google-scholar-author-cited-by
+https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+https://docs.github.com/actions/writing-workflows/workflow-syntax-for-github-actions
