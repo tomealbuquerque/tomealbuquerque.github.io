@@ -38,7 +38,7 @@
 
 	const boldAuthorName = (s) =>
 		esc(s).replace(
-			/(Tomé\s+Albuquerque|T\.\s*Albuquerque)/gi,
+			/(Tom[ée]\s+Albuquerque|T\.?\s*Albuquerque)/gi,
 			'<strong class="author-emphasis">$1</strong>',
 		);
 
