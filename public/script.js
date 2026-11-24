@@ -104,8 +104,8 @@
 		target.innerHTML = repos
 			.map((p) => {
 				const stats = [];
-				if (Number.isFinite(p.stars)) stats.push(`${p.stars} stars`);
-				if (Number.isFinite(p.forks)) stats.push(`${p.forks} forks`);
+				if (Number.isFinite(p.stars)) stats.push(`★ ${p.stars}`);
+				if (Number.isFinite(p.forks)) stats.push(`⑂ ${p.forks}`);
 				const metaTail = stats.length ? ` · ${stats.join(' · ')}` : '';
 
 				return `<a class="project" href="${esc(safe(p.url))}" target="_blank" rel="noopener noreferrer"><div class="repo-top"><span>PUBLIC REPOSITORY</span><span aria-hidden="true">↗</span></div><h3>${esc(p.name)}</h3><p>${esc(p.description)}</p><div class="repo-bottom">${esc(p.language || 'Repository')}${metaTail}</div></a>`;
