@@ -64,7 +64,7 @@
       "authors": "T. Albuquerque, L. Rosado, R. Cruz, et al.",
       "url": "https://doi.org/10.1016/j.iswa.2022.200170",
       "citations": null,
-      "selected": false
+      "selected": true
     },
     {
       "title": "Quality Control in Digital Pathology: Automatic Fragment Detection and Counting",
@@ -87,11 +87,11 @@
     {
       "title": "Deep Ordinal Focus Assessment for Whole Slide Images",
       "year": 2021,
-      "venue": "ICCV Workshops",
+      "venue": "ICCV Workshops (ICCVW)",
       "authors": "T. Albuquerque, A. Moreira, J. S. Cardoso",
       "url": "https://doi.org/10.1109/ICCVW54120.2021.00079",
       "citations": null,
-      "selected": false
+      "selected": true
     },
     {
       "title": "Embedded Regularization For Classification Of Colposcopic Images",
