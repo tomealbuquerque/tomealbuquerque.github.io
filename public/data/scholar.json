@@ -17,7 +17,7 @@
       "year": 2026,
       "venue": "CVPR",
       "authors": "P. Pati, B. Li, A. R. Khan, T. Albuquerque, et al.",
-      "url": "",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Pati_BiGMINT_Biologically-guided_Hierarchical_Multimodal_Integration_for_Modeling_Multiple_Compound_Activities_CVPR_2026_paper.html",
       "citations": null,
       "selected": true
     },
@@ -28,7 +28,7 @@
       "authors": "P. Pati, H. Cheng, S. Jaensch, et al. (including T. Albuquerque)",
       "url": "https://doi.org/10.1007/978-3-032-05169-1_36",
       "citations": null,
-      "selected": false
+      "selected": true
     },
     {
       "title": "Unimodal Distributions for Ordinal Regression",
@@ -73,7 +73,7 @@
       "authors": "T. Albuquerque, A. Moreira, B. Barros, et al.",
       "url": "https://doi.org/10.1109/EMBC48229.2022.9871208",
       "citations": null,
-      "selected": false
+      "selected": true
     },
     {
       "title": "Ordinal losses for classification of cervical cancer risk",

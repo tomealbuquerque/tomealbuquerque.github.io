@@ -40,11 +40,10 @@
 				<a class="brand" href="#main"><span class="mark" aria-hidden="true">ta.</span>Tomé Albuquerque</a>
 				<div class="navlinks">
 					<a href="#research">Research</a>
-					<a href="#featured">Featured Work</a>
 					<a href="#publications">Publications</a>
 					<a href="#software">Software</a>
-					<a href="#experience">Experience</a>
-					<a href="assets/CV_TAlbuquerque_git.pdf" download aria-label="Download CV" title="Download CV">CV ↓</a>
+					<a href="#about">About</a>
+					<!-- <a href="assets/CV_TAlbuquerque_git.pdf" download aria-label="Download CV" title="Download CV">CV ↓</a> -->
 					<a href="#contact">Contact ↗</a>
 					<button
 						class="theme"
@@ -72,12 +71,12 @@
 						of biology.
 					</p>
 					<p class="intro">
-						I develop foundation models and multimodal AI across cellular imaging, omics and medical data to
+						I develop foundation models and multimodal AI for cellular imaging, omics and medical data to
 						advance biological understanding and accelerate drug discovery.
 					</p>
 					<div class="buttons">
-						<a class="button primary" href="#research"
-							>Explore my research <span aria-hidden="true">↗</span></a
+						<a class="button primary" href="#featured"
+							>Explore featured work <span aria-hidden="true">↗</span></a
 						>
 						<a class="button" href="assets/CV_TAlbuquerque_git.pdf" download
 							>Download CV <span aria-hidden="true">↓</span></a
@@ -124,10 +123,7 @@
 
 			<div class="affiliations" aria-label="Research impact snapshot">
 				<span class="eyebrow">Impact snapshot</span>
-				<span>Nature Methods · CVPR · MICCAI</span>
-				<span>J&amp;J · Roche · INESC TEC</span>
-				<span>Ph.D. Biomedical Engineering</span>
-				<span>Open-source ML for bioimaging</span>
+				<span> Nature Methods · CVPR · MICCAI</span>
 			</div>
 
 			<section class="block" id="research">
@@ -183,33 +179,57 @@
 
 				<div class="projects">
 					<article class="project">
-						<div class="repo-top">
-							<span>MORPHOLOGICAL FOUNDATION MODELS</span>
-							<span aria-hidden="true">●</span>
+						<div class="feature-layout">
+							<div class="feature-copy">
+								<div class="repo-top">
+									<span>MORPHOLOGICAL FOUNDATION MODELS</span>
+									<span aria-hidden="true">●</span>
+								</div>
+								<h3>Transferable cellular representation learning.</h3>
+								<p>Learning robust embeddings of cellular state from high-content imaging and Cell Painting data.</p>
+								<div class="repo-bottom">Cell Painting · Self-supervised Learning · Foundation Models</div>
+								<p class="case-links"><a class="paper-link" href="https://doi.org/10.1038/s41592-026-03270-z" target="_blank" rel="noopener noreferrer">Paper ↗</a> · <a class="paper-link" href="https://github.com/johnsonandjohnson/DeepCellMorpho" target="_blank" rel="noopener noreferrer">Code ↗</a></p>
+							</div>
+							<figure class="feature-media">
+								<img src="assets/nature_fig_abs.png" alt="Nature Methods flagship project visual" loading="lazy" />
+							</figure>
 						</div>
-						<h3>Transferable cellular representation learning.</h3>
-						<p>Learning robust embeddings of cellular state from high-content imaging and Cell Painting data.</p>
-						<div class="repo-bottom">Cell Painting · Self-supervised Learning · Foundation Models</div>
 					</article>
 
 					<article class="project">
-						<div class="repo-top">
-							<span>MULTIMODAL BIOLOGICAL AI</span>
-							<span aria-hidden="true">●</span>
+						<div class="feature-layout">
+							<div class="feature-copy">
+								<div class="repo-top">
+									<span>MULTIMODAL BIOLOGICAL AI</span>
+									<span aria-hidden="true">●</span>
+								</div>
+								<h3>Connecting morphology, omics and molecular signals.</h3>
+								<p>Building cross-modal models that integrate imaging, transcriptomics and molecular structure for discovery.</p>
+								<div class="repo-bottom">HCI · Transcriptomics · Molecular Structure · Cross-modal Learning</div>
+								<p class="case-links"><a class="paper-link" href="https://openaccess.thecvf.com/content/CVPR2026/html/Pati_BiGMINT_Biologically-guided_Hierarchical_Multimodal_Integration_for_Modeling_Multiple_Compound_Activities_CVPR_2026_paper.html" target="_blank" rel="noopener noreferrer">Paper ↗</a></p>
+							</div>
+							<figure class="feature-media">
+								<img src="assets/cvpr_fig_abs.png" alt="CVPR flagship project visual" loading="lazy" />
+							</figure>
 						</div>
-						<h3>Connecting morphology, omics and molecular signals.</h3>
-						<p>Building cross-modal models that integrate imaging, transcriptomics and molecular structure for discovery.</p>
-						<div class="repo-bottom">HCI · Transcriptomics · Molecular Structure · Cross-modal Learning</div>
 					</article>
 
 					<article class="project">
-						<div class="repo-top">
-							<span>AI FOR PRECISION MEDICINE</span>
-							<span aria-hidden="true">●</span>
+						<div class="feature-layout">
+							<div class="feature-copy">
+								<div class="repo-top">
+									<span>AI FOR PRECISION MEDICINE</span>
+									<span aria-hidden="true">●</span>
+								</div>
+								<h3>Multimodal learning for biomarker prediction.</h3>
+								<p>Integrating MRI and whole-slide pathology to model molecular biomarkers across complementary views of disease.</p>
+								<div class="repo-bottom">Digital Pathology · MRI · Ordinal Learning · Explainability</div>
+								<p class="case-links"><a class="paper-link" href="https://link.springer.com/chapter/10.1007/978-3-031-47425-5_15" target="_blank" rel="noopener noreferrer">Paper ↗</a> · <a class="paper-link" href="https://github.com/tomealbuquerque/multimodal-glioma-biomarkers-detection" target="_blank" rel="noopener noreferrer">Code ↗</a></p>
+							</div>
+							<figure class="feature-media">
+								<img src="assets/miccai_fig_abs.png" alt="MICCAI flagship project visual" loading="lazy" />
+							</figure>
 						</div>
-						<h3>From pathology and MRI to actionable biomarkers.</h3>
-						<p>Developing interpretable multimodal pipelines to improve biomarker detection and clinical decision support.</p>
-						<div class="repo-bottom">Digital Pathology · MRI · Ordinal Learning · Explainability</div>
 					</article>
 				</div>
 			</section>
@@ -232,10 +252,9 @@
 				<div class="scholar-panel">
 					<div class="scholar-info">
 						<strong>Google Scholar</strong>
-						<p id="sync-status">Research metrics · Google Scholar</p>
-						<p>Publications & citation metrics</p>
+						<p id="sync-status">Complete publication record and current citation metrics.</p>
+						<p><a class="paper-link" href="https://scholar.google.com/citations?user=RfeLaPEAAAAJ" target="_blank" rel="noopener noreferrer">View profile ↗</a></p>
 					</div>
-
 					<div class="stats">
 						<div class="stat">
 							<strong id="citations">—</strong>
@@ -302,6 +321,9 @@
 							<h3>BiGMINT: Biologically-guided Hierarchical Multimodal Integration for Modeling Multiple Compound Activities in Drug Discovery</h3>
 							<p>P. Pati, B. Li, A. R. Khan, <strong>T. Albuquerque</strong>, et al.</p>
 							<p class="venue">CVPR</p>
+							<a class="paper-link" href="https://openaccess.thecvf.com/content/CVPR2026/html/Pati_BiGMINT_Biologically-guided_Hierarchical_Multimodal_Integration_for_Modeling_Multiple_Compound_Activities_CVPR_2026_paper.html" target="_blank" rel="noopener noreferrer"
+								>Read publication ↗</a
+							>
 						</div>
 					</article>
 
@@ -340,6 +362,30 @@
 								href="https://link.springer.com/chapter/10.1007/978-3-031-47425-5_15"
 								target="_blank"
 								rel="noopener noreferrer"
+								>Read publication ↗</a
+							>
+						</div>
+					</article>
+
+					<article class="paper">
+						<div class="paper-year">2025</div>
+						<div>
+							<h3>MoMIL: Mixture of Multi-instance Learners for Modeling Multiple Compound Activities in High Content Imaging</h3>
+							<p>P. Pati, H. Cheng, S. Jaensch, et al. (including <strong>T. Albuquerque</strong>)</p>
+							<p class="venue">MICCAI</p>
+							<a class="paper-link" href="https://doi.org/10.1007/978-3-032-05169-1_36" target="_blank" rel="noopener noreferrer"
+								>Read publication ↗</a
+							>
+						</div>
+					</article>
+
+					<article class="paper">
+						<div class="paper-year">2022</div>
+						<div>
+							<h3>Quality Control in Digital Pathology: Automatic Fragment Detection and Counting</h3>
+							<p><strong>T. Albuquerque</strong>, A. Moreira, B. Barros, et al.</p>
+							<p class="venue">EMBC</p>
+							<a class="paper-link" href="https://doi.org/10.1109/EMBC48229.2022.9871208" target="_blank" rel="noopener noreferrer"
 								>Read publication ↗</a
 							>
 						</div>
@@ -422,10 +468,10 @@
 				<p class="status" id="repo-status">Selected public repositories.</p>
 			</section>
 
-			<section class="block" id="experience">
+			<section class="block" id="about">
 				<div class="section-head">
 					<div>
-						<div class="eyebrow">05 / BACKGROUND</div>
+						<div class="eyebrow">05 / ABOUT</div>
 						<h2>A bridge between disciplines.</h2>
 					</div>
 					<p>
@@ -439,34 +485,65 @@
 						<div class="small-title">Experience</div>
 						<div class="timeline">
 							<article>
-								<div class="date">2024 – Present</div>
+								<div class="date">August 2024 – Present</div>
 								<div>
 									<h3>Johnson &amp; Johnson</h3>
-									<p>Postdoctoral Researcher · AI/ML in Drug Discovery</p>
-									<p>Foundation models for biological imaging, multimodal learning and scalable ML workflows.</p>
+									<p>Post Doctoral Researcher - AI/ML in Drug Discovery, Zug, Switzerland</p>
+									<ul class="exp-points">
+										<li>Led development and deployment of scalable ML infrastructure for high-content imaging, enabling large-scale ViT-based featurization across millions of images and reducing end-to-end computation time by 10x.</li>
+										<li>Developed and benchmarked foundation models for cellular imaging at 100+ TB scale (JUMP-CP), spanning representation learning, morphological profiling and large-scale biological evaluation.</li>
+										<li>Built multimodal learning systems connecting cellular imaging, transcriptomics and molecular structure, alongside reusable ML pipelines for pharmaceutical research.</li>
+									</ul>
 								</div>
 							</article>
 
 							<article>
-								<div class="date">2023 – 2024</div>
+								<div class="date">December 2023 – May 2024</div>
 								<div>
 									<h3>Roche</h3>
-									<p>Ph.D. Intern · Digital Pathology R&amp;D</p>
-									<p>Interpretability and robustness of attention-based multiple-instance learning.</p>
+									<p>PhD Intern - Digital Pathology Product R&amp;D, Basel, Switzerland</p>
+									<ul class="exp-points">
+										<li>Developed an ABMIL interpretability framework to detect spurious correlations in diagnostic pathology models using tile- and WSI-level confounder injection and quantitative localization metrics.</li>
+										<li>Integrated advanced XAI tooling into production pathology pipelines through close collaboration with R&amp;D engineers, accelerating deployment of reliable and interpretable model outputs.</li>
+									</ul>
 								</div>
 							</article>
 
 							<article>
-								<div class="date">2019 – 2024</div>
+								<div class="date">October 2019 – March 2024</div>
 								<div>
-									<h3>University of Porto / INESC TEC</h3>
-									<p>Ph.D. Researcher</p>
-									<p>Computer vision, ordinal learning and explainable AI for medical imaging.</p>
+									<h3>VCMI, INESC TEC</h3>
+									<p>Research Assistant / PhD Student, Porto, Portugal</p>
+									<ul class="exp-points">
+										<li>Developed Clinical Decision Support Systems (DSS) for cervical cancer screening using computer vision and ordinal inference.</li>
+										<li>Designed deep learning models for pathological image quality assessment in partnership with Leica Biosystems and IMP.</li>
+										<li>Built XAI systems (TAMI Project) with Carnegie Mellon University and engineered EDoF computational microscopy methods with Fraunhofer Portugal AICOS for resource-limited screening settings.</li>
+									</ul>
+								</div>
+							</article>
+
+							<article>
+								<div class="date">October 2022 – March 2023</div>
+								<div>
+									<h3>Technical University of Munich</h3>
+									<p>Guest PhD Student, Schuffler Lab, Munich, Germany</p>
+									<ul class="exp-points">
+										<li>Developed multimodal deep learning architectures for identification of brain tumor biomarkers (IDH1 and 1p19q) by fusing MRI and whole-slide images (digital pathology) using data-fusion and context-aware strategies.</li>
+									</ul>
+								</div>
+							</article>
+
+							<article>
+								<div class="date">September 2018 – July 2019</div>
+								<div>
+									<h3>FEUP / INEGI</h3>
+									<p>Graduate Researcher, Porto, Portugal</p>
+									<ul class="exp-points">
+										<li>Conducted computational biomechanics research on peripheral nerve tissue regeneration using finite element method (FEM) and meshless methods for structural simulation.</li>
+									</ul>
 								</div>
 							</article>
 						</div>
-						<p class="status">Visiting researcher: Technical University of Munich (2022–2023)</p>
-						<p class="status">Earlier research: FEUP / INEGI (2018–2019)</p>
 					</div>
 
 					<div>
@@ -496,31 +573,70 @@
 							</article>
 						</div>
 
-						<div class="small-title" style="margin-top:30px">ML / Research</div>
+						<div class="small-title" style="margin-top:30px">Technical Skills</div>
+
+						<div class="small-title" style="margin-top:12px">Machine Learning</div>
+						<div class="skills">
+							<span>Self-supervised Learning</span>
+							<span>Representation Learning</span>
+							<span>Multimodal Learning</span>
+							<span>Ordinal Learning</span>
+							<span>Foundation Models</span>
+							<span>GenAI</span>
+							<span>Transfer Learning</span>
+						</div>
+
+						<div class="small-title" style="margin-top:20px">Core Stack</div>
 						<div class="skills">
 							<span>Python</span>
 							<span>PyTorch</span>
-							<span>MONAI</span>
-							<span>scikit-learn</span>
 							<span>TensorFlow</span>
+							<span>scikit-learn</span>
+							<span>OpenCV</span>
+							<span>Pandas</span>
+							<span>NumPy</span>
+							<span>SQL</span>
 						</div>
 
-						<div class="small-title" style="margin-top:20px">Scale / Infrastructure</div>
+						<div class="small-title" style="margin-top:20px">Scale &amp; MLOps</div>
 						<div class="skills">
-							<span>Multi-GPU training</span>
-							<span>Distributed training</span>
-							<span>Docker</span>
+							<span>Multi-node / Multi-GPU Training</span>
+							<span>Distributed Data Processing</span>
 							<span>Kubernetes</span>
+							<span>Docker</span>
 							<span>SLURM</span>
 							<span>AWS</span>
+							<span>Hydra</span>
+							<span>Weights &amp; Biases</span>
+							<span>MLflow</span>
+							<span>Linux</span>
+							<span>Bash</span>
+							<span>Git</span>
 						</div>
 
-						<div class="small-title" style="margin-top:20px">ML Engineering</div>
+						<div class="small-title" style="margin-top:20px">Domain Expertise</div>
 						<div class="skills">
-							<span>MLflow</span>
-							<span>Git</span>
-							<span>Experiment tracking</span>
-							<span>CI/CD</span>
+							<span>Cell Painting</span>
+							<span>High-Content Imaging</span>
+							<span>Drug Discovery</span>
+							<span>OMICS</span>
+							<span>Digital Pathology</span>
+							<span>Biomarker Discovery</span>
+							<span>Morphological Profiling</span>
+							<span>MRI</span>
+							<span>MONAI</span>
+							<span>OpenSlide</span>
+						</div>
+
+						<div class="small-title" style="margin-top:20px">Leadership &amp; Delivery</div>
+						<div class="skills">
+							<span>Mentoring</span>
+							<span>Cross-functional Collaboration</span>
+							<span>Project Scoping &amp; Roadmapping</span>
+							<span>Stakeholder Management</span>
+							<span>ICAgile Certified Professional</span>
+							<span>Risk Management</span>
+							<span>Agile</span>
 						</div>
 
 						<div class="small-title" style="margin-top:30px">Community</div>
@@ -580,7 +696,7 @@
 						"year": 2026,
 						"venue": "CVPR",
 						"authors": "P. Pati, B. Li, A. R. Khan, T. Albuquerque, et al.",
-						"url": "",
+						"url": "https://openaccess.thecvf.com/content/CVPR2026/html/Pati_BiGMINT_Biologically-guided_Hierarchical_Multimodal_Integration_for_Modeling_Multiple_Compound_Activities_CVPR_2026_paper.html",
 						"citations": null,
 						"selected": true
 					},
@@ -591,7 +707,7 @@
 						"authors": "P. Pati, H. Cheng, S. Jaensch, et al. (including T. Albuquerque)",
 						"url": "https://doi.org/10.1007/978-3-032-05169-1_36",
 						"citations": null,
-						"selected": false
+						"selected": true
 					},
 					{
 						"title": "Unimodal Distributions for Ordinal Regression",
@@ -636,7 +752,7 @@
 						"authors": "T. Albuquerque, A. Moreira, B. Barros, et al.",
 						"url": "https://doi.org/10.1109/EMBC48229.2022.9871208",
 						"citations": null,
-						"selected": false
+						"selected": true
 					},
 					{
 						"title": "Ordinal losses for classification of cervical cancer risk",
